@@ -1,0 +1,8 @@
+(defun Piramide ()
+    (print "Dame el area de la base: ")
+    (setq areabase (read))
+    (print "Dame la altura de la piramide: ")
+    (setq altura (read))
+    (setq resultado (* (/ 1 3) areabase altura))
+    (write resultado)
+)

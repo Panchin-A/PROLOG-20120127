@@ -1,0 +1,11 @@
+(
+	defun trapecio ()
+	(print "Dame la Base 1 del trapecio: ")
+    (setq B1(read))
+	(print "Dame la Base 2 del trapecio: ")
+    (setq B2(read))
+	(print "Dame la Altura del trapecio: ")
+    (setq H(read))
+    (setq resultado(/ (* (+ B1 B2) H) 2))
+          (write resultado)
+)

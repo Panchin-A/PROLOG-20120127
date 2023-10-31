@@ -1,0 +1,6 @@
+(defun Hexaedro ()
+    (print "Dame la longitud de un lado del hexaedro: ")
+    (setq l (read))
+    (setq resultado (* l l l))
+    (write resultado)
+)

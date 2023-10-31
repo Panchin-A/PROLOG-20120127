@@ -1,0 +1,7 @@
+(defvar *areaCuadrado* (lambda (a b )(* a b)))
+(defun pidedatos()
+(princ "Dame la base")
+(setq b (read))
+(princ "Dame la altura")
+(setq a (read))
+(format t "EL RESULTADO ES ~A" (funcall *areacuadrado* a b)))

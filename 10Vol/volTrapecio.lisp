@@ -1,0 +1,13 @@
+(defun calcular-volumen-trapecio ()
+(print  "Dame la longitud de la base superior del trapecio: ")
+(setq bsuperior (read))
+(print  "Dame la longitud de la base inferior del trapecio: ")
+(setq binferior (read))
+(print  "Dame la altura del trapecio: ")
+(setq h (read))
+(print  "Dame la longitud de los lados del trapecio: ")
+(setq l (read))
+(setq resultado (/ (* (+ bsuperior binferior) h l) 2))
+(write resultado)
+)
+

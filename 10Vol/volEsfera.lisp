@@ -1,0 +1,6 @@
+(defun Esfera ()
+    (print "Dame el radio de la esfera: ")
+    (setq r (read))
+    (setq resultado (* (/ 4 3) 3.14 (* r r r)))
+    (write resultado)
+)
