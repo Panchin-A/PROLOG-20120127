@@ -1,0 +1,105 @@
+(defvar *pi* 3.14159265359)
+(defvar *cilindro* (lambda (r h) (* *pi* (* r r) h)))
+(defvar *cono* (lambda (r h) (/ (* *pi* (* r r) h) 3.0)))
+(defvar *cubo* (lambda (l) (* l l l)))
+(defvar *esfera* (lambda (r) (* (/ 4 3) *pi* (* r r r))))
+(defvar *hexaedro* (lambda (l) (* l l l)))
+(defvar *piramide* (lambda (areabase altura) (* (/ 1 3) areabase altura)))
+(defvar *prisma-rectangular* (lambda (a b h) (* a b h)))
+(defvar *romboide* (lambda (bmayor bmenor h) (* bmayor bmenor h)))
+(defvar *volumen-trapecio* (lambda (bsuperior binferior h l) (/ (* (+ bsuperior binferior) h l) 2)))
+(defvar *tronco-cono* (lambda (altura rMayor rMenor) (/ (* *pi* altura (+ (* rMayor rMayor) (* rMayor rMenor) (* rMenor rMenor))) 3)))
+
+(defun cilindro ()
+  (princ "Dame el radio del cilindro: ")
+  (setq r (read))
+  (princ "Dame la altura del cilindro: ")
+  (setq h (read))
+  (format t "El volumen es: ~A" (funcall *cilindro* r h))
+  
+)
+
+(defun cono ()
+  (princ "Dame la altura del cono: ")
+  (setq h (read))
+  (princ "Dame el radio de la base del cono: ")
+  (setq r (read))
+  (format t "El volumen es: ~A" (funcall *cono* r h))
+  
+)
+
+(defun Cubo ()
+  (princ "Dame la longitud de un lado del cubo: ")
+  (setq l (read))
+  (format t "El volumen es: ~A" (funcall *cubo* l))
+  
+)
+
+(defun Esfera ()
+  (princ "Dame el radio de la esfera: ")
+  (setq r (read))
+  (format t "El volumen es: ~A" (funcall *esfera* r))
+  
+)
+
+(defun Hexaedro ()
+  (princ "Dame la longitud de un lado del hexaedro: ")
+  (setq l (read))
+  (format t "El volumen es: ~A" (funcall *hexaedro* l))
+  
+)
+
+(defun Piramide ()
+  (princ "Dame el area de la base: ")
+  (setq areabase (read))
+  (princ "Dame la altura de la piramide: ")
+  (setq altura (read))
+  (format t "El volumen es: ~A" (funcall *piramide* areabase altura))
+  
+)
+
+(defun PrismaRectangular ()
+  (princ "Dame el ancho del prisma: ")
+  (setq a (read))
+  (princ "Dame la base del prisma: ")
+  (setq b (read))
+  (princ "Dame la altura del prisma: ")
+  (setq h (read))
+  (format t "El volumen es: ~A" (funcall *prisma-rectangular* a b h))
+  
+)
+
+(defun romboide ()
+  (princ "Dame la longitud de la base mayor del romboide: ")
+  (setq bmayor (read))
+  (princ "Dame la longitud de la base menor del romboide: ")
+  (setq bmenor (read))
+  (princ "Dame la altura del romboide: ")
+  (setq h (read))
+  (format t "El volumen es: ~A" (funcall *romboide* bmayor bmenor h))
+  
+)
+
+(defun calcular-volumen-trapecio ()
+  (princ "Dame la longitud de la base superior del trapecio: ")
+  (setq bsuperior (read))
+  (princ "Dame la longitud de la base inferior del trapecio: ")
+  (setq binferior (read))
+  (princ "Dame la altura del trapecio: ")
+  (setq h (read))
+  (princ "Dame la longitud de los lados del trapecio: ")
+  (setq l (read))
+  (format t "El volumen es: ~A" (funcall *volumen-trapecio* bsuperior binferior h l))
+  
+)
+
+(defun tronco-cono ()
+  (princ "Dame la altura del tronco de cono: ")
+  (setq altura (read))
+  (princ "Dame el radio mayor del tronco de cono: ")
+  (setq rMayor (read))
+  (princ "Dame el radio menor del tronco de cono: ")
+  (setq rMenor (read))
+  (format t "El volumen es: ~A" (funcall *tronco-cono* altura rMayor rMenor))
+  
+)
