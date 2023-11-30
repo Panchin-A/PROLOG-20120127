@@ -15,7 +15,6 @@ Tia(Patricia)
 Tia(Mona)
 Hijo(Francisco)
 Abuela(Lourdes)
-
 Padrede(Raul,Francisco)
 Padrede(Raul,David)
 Padrede(Raul,Rosa)
@@ -55,9 +54,6 @@ Hermanode(Francisco,David)
 Hermanode(Francisco,Brandon)
 Hermanode(Francisco,Rosa)
 Hermanode(Pepe,Jorge)
-Abuelade(Lourdes,Francisco)
-Abuelade(Lourdes,David)
-Abuelade(Lourdes,Rosa)
-Abuelade(Lourdes,Brandon)
+
 
 
