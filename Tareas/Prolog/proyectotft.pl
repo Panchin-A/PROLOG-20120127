@@ -298,7 +298,7 @@ replace0([I|_], Input, _, Resp, R):-
 	template([hay, heartsteel, en, tft, '?'], ListaResultado, []):-
 		findall(HEARTSTEEL, heartsteel(HEARTSTEEL), ListaResultado).
 
-	% rasgo PENTAKILL-estados
+	% rasgo PENTAKILL
 	template([pentakill], ListaResultado, []):-
 		findall(Pentakill, pentakill(Pentakill), ListaResultado).
 	
@@ -320,7 +320,7 @@ replace0([I|_], Input, _, Resp, R):-
 	template([hay, pentakill, en, tft, '?'], ListaResultado, []):-
 		findall(Pentakill, pentakill(Pentakill), ListaResultado).
 
-	% rasgo TRUE DAMAGE-juegos
+	% rasgo TRUE DAMAGE
 	template([true_damage], ListaResultado, []):-
 		findall(True_damage, true_damage(True_damage), ListaResultado).
 	
@@ -342,7 +342,7 @@ replace0([I|_], Input, _, Resp, R):-
 	template([hay, true_damage, en, tft, '?'], ListaResultado, []):-
 		findall(True_damage, true_damage(True_damage), ListaResultado).
 	
-	% rasgo COUNTRY-personaje
+	% rasgo COUNTRY
 	template([country], ListaResultado, []):-
 		findall(Country, country(Country), ListaResultado).
 	
