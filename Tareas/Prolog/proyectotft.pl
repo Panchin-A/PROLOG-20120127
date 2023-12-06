@@ -460,7 +460,7 @@ replace0([I|_], Input, _, Resp, R):-
 		findall(Bit, bit(Bit), ListaResultado).
 	
 	template([dime, campeones, bit, de, tft], ListaResultado, []):-
-		findall(Bit, bit(Bits), ListaResultado).
+		findall(Bit, bit(Bit), ListaResultado).
 	
 	template([cuales, son, campeones, bit], ListaResultado, []):-
 		findall(Bit, bit(Bit), ListaResultado).
@@ -496,7 +496,7 @@ replace0([I|_], Input, _, Resp, R):-
 	template([hay, hyperpop, en, tft, '?'], ListaResultado, []):-
 		findall(Hyperpop, hyperpop(Hyperpop), ListaResultado).
 
-    
+
 
 % rasgo EDM
 template([edm], ListaResultado, []):-
