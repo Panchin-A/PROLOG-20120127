@@ -1,5 +1,5 @@
 % Llamamiento inicial
-pachonc:-	writeln('Hola, mi nombre es Pachonc, bienvenido al set 10 de tft, te ayudare con las dudas que tengas. Te recuerdo que todas las entradas deben ser en minusculas y con un "." al final'),
+pachonc:-writeln('Hola, mi nombre es Pachonc, bienvenido al set 10 de tft, te ayudare con las dudas que tengas. Te recuerdo que todas las entradas deben ser en minusculas y con un "." al final'),
 	readln(Input),
 	pachonc(Input),!.
 
@@ -50,12 +50,12 @@ pachonc:-	writeln('Hola, mi nombre es Pachonc, bienvenido al set 10 de tft, te a
 	
 	% TEMPLATES DE DENGUE
 	% Info del dengue
-	template([dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al género Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad más grave, conocida como dengue grave o dengue hemorrágico. Los síntomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupción cutánea y síntomas similares a los de la gripe.'],[]).
-	template([hablame, del, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al género Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad más grave, conocida como dengue grave o dengue hemorrágico. Los síntomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupción cutánea y síntomas similares a los de la gripe.'],[]).
-	template([que, sabes, del, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al género Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad más grave, conocida como dengue grave o dengue hemorrágico. Los síntomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupción cutánea y síntomas similares a los de la gripe.'],[]).
-	template([que, es, el, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al género Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad más grave, conocida como dengue grave o dengue hemorrágico. Los síntomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupción cutánea y síntomas similares a los de la gripe.'],[]).
-    template([cuentame, sobre, el, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al género Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad más grave, conocida como dengue grave o dengue hemorrágico. Los síntomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupción cutánea y síntomas similares a los de la gripe.'],[]).
-	
+	template([dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al genero Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad mas grave, conocida como dengue grave o dengue hemorragico. Los sintomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupcion cutanea y sintomas similares a los de la gripe.'],[]).
+    template([hablame, del, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al genero Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad mas grave, conocida como dengue grave o dengue hemorragico. Los sintomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupcion cutanea y sintomas similares a los de la gripe.'],[]).
+    template([que, sabes, del, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al genero Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad mas grave, conocida como dengue grave o dengue hemorragico. Los sintomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupcion cutanea y sintomas similares a los de la gripe.'],[]).
+    template([que, es, el, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al genero Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad mas grave, conocida como dengue grave o dengue hemorragico. Los sintomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupcion cutanea y sintomas similares a los de la gripe.'],[]).
+    template([cuentame, sobre, el, dengue, '.'],['El dengue es una enfermedad viral transmitida por mosquitos, principalmente por el mosquito Aedes aegypti. Este virus pertenece al genero Flavivirus y se manifiesta en diferentes formas, desde una fiebre leve hasta una enfermedad mas grave, conocida como dengue grave o dengue hemorragico. Los sintomas comunes incluyen fiebre, dolor de cabeza, dolor muscular y articular, erupcion cutanea y sintomas similares a los de la gripe.'],[]).
+
     % sintomas del dengue
 	template([sintomas], ListaResultado, []) :-
    	 	findall(Sintomas, sintoma_dengue(Sintomas), ListaResultado).
@@ -168,55 +168,55 @@ pachonc:-	writeln('Hola, mi nombre es Pachonc, bienvenido al set 10 de tft, te a
 	% Hechos y flag de causas del dengue
 	causasIs(X, R):- causa_dengue(X), R = [si, X, es, una, causa, del, dengue].
     causasIs(X, R):- \+causa_dengue(X), R = [X, no, es, una, causa, del, dengue].
-	causa_dengue('virus del Dengue').
-	causa_dengue('picadura de mosquito Aedes aegypti').
-	causa_dengue('picadura de aedes albopictus').
-	causa_dengue('viajes a áreas endémicas').
-    causa_dengue('acumulación de agua estancada').
+	causa_dengue('virus_del_Dengue').
+	causa_dengue('picadura_de_mosquito_Aedes_aegypti').
+	causa_dengue('picadura_de_aedes_albopictus').
+	causa_dengue('viajes_a_areas_endémicas').
+    causa_dengue('acumulacion_de_agua_estancada').
 
 	% Hechos y flag de sintomas del dengue
 	sintomaIs(X, R):- sintoma_dengue(X), R = [si, X, es, un, sintoma, del, dengue].
     sintomaIs(X, R):- \+sintoma_dengue(X), R = [X, no, es, un, sintoma, del, dengue].
-	sintoma_dengue('fiebre alta').
-	sintoma_dengue('dolor de cabeza').
-	sintoma_dengue('dolor muscular').
-	sintoma_dengue('náuseas').
-	sintoma_dengue('vómitos').
+	sintoma_dengue('fiebre_alta').
+	sintoma_dengue('dolor_de_cabeza').
+	sintoma_dengue('dolor_muscular').
+	sintoma_dengue('nauseas').
+	sintoma_dengue('vomitos').
 	sintoma_dengue('fatiga').
-	sintoma_dengue('dolor abdominal').
-	sintoma_dengue('erupcion cutanea').
+	sintoma_dengue('dolor_abdominal').
+	sintoma_dengue('erupcion_cutanea').
 	sintoma_dengue('esangrado').
-	sintoma_dengue('dolor articular').
+	sintoma_dengue('dolor_articular').
 	
 
 	% Hechos y flag de especialistas del dengue
 	especialistaIs(X, R):- especialista_dengue(X), R = [si, X, es, un, especialista, apto, para, diagnosticar, el, dengue].
     especialistaIs(X, R):- \+especialista_dengue(X), R = [X, no, es, un, especialista, apto, para, diagnosticar, el, dengue].
-	especialista_dengue('medico general').
-	especialista_dengue('especialista de enfermedades infecciosas').
+	especialista_dengue('medico_general').
+	especialista_dengue('especialista_de_enfermedades_infecciosas').
 	especialista_dengue('pediatra').
 	especialista_dengue('enfermero').
-    especialista_dengue('especialista de medicina interna').
-    especialista_dengue('hematólogo').
+    especialista_dengue('especialista_de_medicina_interna').
+    especialista_dengue('hematologo').
     especialista_dengue('urgenciologo').
-    especialista_dengue('medico de familia').
+    especialista_dengue('medico_de_familia').
 
 	% Hechos de medicamentos para el dengue
 	medicamentoIs(X, R):- medicamento_dengue(X), R = [si, X, es, un, medicamento, para, tratar, el, dengue].
     medicamentoIs(X, R):- \+medicamento_dengue(X), R = [X, no, es, un, medicamento, para, tratar, el, dengue].
-	medicamento_dengue('analgésicos').
+	medicamento_dengue('analgesicos').
 	medicamento_dengue('antifebriles').
 	medicamento_dengue('reposo').
     medicamento_dengue('hidratacion').
-    medicamento_dengue('monitoreo de plaquetas').
+    medicamento_dengue('monitoreo_de_plaquetas').
 	
     % Hechos del tratamiento para el dengue
 	tratamiento_dengue('hidratacion').
 	tratamiento_dengue('paracetamol').
 	tratamiento_dengue('descanso').
-	tratamiento_dengue('monitoreo medico').
-    tratamiento_dengue('transfucion de plaquetas').
-    tratamiento_dengue('cuidados en el hospital').
+	tratamiento_dengue('monitoreo_medico').
+    tratamiento_dengue('transfucion_de_plaquetas').
+    tratamiento_dengue('cuidados_en_el_hospital').
 
 % dengue Sintomas:
 replace0([I|_], Input, _, Resp, R):-
@@ -250,9 +250,9 @@ replace0([I|_], Input, _, Resp, R):-
 
 	% TEMPLATES DE TFT
 	% info tft
-	template([tft], ['Teamfight Tactics es un juego estratégico gratuito de todos contra todos en el que participan campeones emblemáticos de League of Legends. ¿Cuál es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el último jugador en pie. '], []).
-	template([que, es, tft], ['Teamfight Tactics es un juego estratégico gratuito de todos contra todos en el que participan campeones emblemáticos de League of Legends. ¿Cuál es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el último jugador en pie. '], []).
-	template([hablame, de, tft], ['Teamfight Tactics es un juego estratégico gratuito de todos contra todos en el que participan campeones emblemáticos de League of Legends. ¿Cuál es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el último jugador en pie. '], []).
+	template([tft], ['Teamfight Tactics es un juego estrategico gratuito de todos contra todos en el que participan campeones emblematicos de League of Legends. ¿Cual es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el ultimo jugador en pie. '], []).
+    template([que, es, tft], ['Teamfight Tactics es un juego estrategico gratuito de todos contra todos en el que participan campeones emblematicos de League of Legends. ¿Cual es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el ultimo jugador en pie. '], []).
+    template([hablame, de, tft], ['Teamfight Tactics es un juego estrategico gratuito de todos contra todos en el que participan campeones emblematicos de League of Legends. ¿Cual es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el ultimo jugador en pie. '], []).
 
 	% rasgo KDA
 	template([kda], ListaResultado, []):-
@@ -497,6 +497,7 @@ replace0([I|_], Input, _, Resp, R):-
 		findall(Hyperpop, hyperpop(Hyperpop), ListaResultado).
 
     
+
 % rasgo EDM
 template([edm], ListaResultado, []):-
     findall(Edm, edm(Edm), ListaResultado).
