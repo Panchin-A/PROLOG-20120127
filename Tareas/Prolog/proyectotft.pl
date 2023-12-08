@@ -922,7 +922,7 @@ replace0([I,J,K|_], Input, _, Resp, R):-
 			nth0(K, Input, Atom3),
 			nth0(0, Resp, Z),
 			Z == flagKDAs,
-			campeonestkdaIs(Atom, Atom2, Atom3, R).
+			campeoneskdaIs(Atom, Atom2, Atom3, R).
 		
 	% Heartsteel
 	replace0([I|_], Input, _, Resp, R):-
