@@ -444,75 +444,75 @@ template([hay, edm, en, tft, '?'], ListaResultado, []):-
 	% 
 	template([s(_), es, un, campeon, kda, '.'], [flagKDA], [0]).
     template([s(_), es, kda, '.'], [flagKDA], [0]).
-    template([el, campeon, s(_),es, kda, '.'], [flagKDA], [0]).
-    template([la, campeona, s(_),es, kda, '.'], [flagKDA], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, kda, '.'], [flagKDAs], [1, 3, 5]).
+    template([el, campeon, s(_),es, kda, '.'], [flagKDA], [2]).
+    template([la, campeona, s(_),es, kda, '.'], [flagKDA], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, kda, '.'], [flagKDAs], [0, 2, 4]).
 
     template([s(_), es, un, campeon, heartsteel, '.'], [flagHeartsteel], [0]).
 template([s(_), es, heartsteel, '.'], [flagHeartsteel], [0]).
-    template([el, campeon, s(_),es, heartsteel, '.'], [flagHeartsteel], [0]).
-    template([la, campeona, s(_),es, heartsteel, '.'], [flagHeartsteel], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, heartsteel, '.'], [flagHeartsteels], [1, 3, 5]).
+    template([el, campeon, s(_),es, heartsteel, '.'], [flagHeartsteel], [2]).
+    template([la, campeona, s(_),es, heartsteel, '.'], [flagHeartsteel], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, heartsteel, '.'], [flagHeartsteels], [0, 2, 4]).
 
     template([s(_), es, un, campeon, pentakill, '.'], [flagPentakill], [0]).
 template([s(_), es, pentakill, '.'], [flagPentakill], [0]).
-    template([el, campeon, s(_),es, pentakill, '.'], [flagPentakill], [0]).
-    template([la, campeona, s(_),es, pentakill, '.'], [flagPentakill], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, pentakill, '.'], [flagPentakills], [1, 3, 5]).
+    template([el, campeon, s(_),es, pentakill, '.'], [flagPentakill], [2]).
+    template([la, campeona, s(_),es, pentakill, '.'], [flagPentakill], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, pentakill, '.'], [flagPentakills], [0, 2, 4]).
 
     template([s(_), es, un, campeon, true_damage, '.'], [flagTrue_Damage], [0]).
 template([s(_), es, true_damage, '.'], [flagTrue_Damage], [0]).
-    template([el, campeon, s(_),es, true_damage, '.'], [flagTrue_Damage], [0]).
-    template([la, campeona, s(_),es, true_damage, '.'], [flagTrue_Damage], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, true_damage, '.'], [flagTDs], [1, 3, 5]).
+    template([el, campeon, s(_),es, true_damage, '.'], [flagTrue_Damage], [2]).
+    template([la, campeona, s(_),es, true_damage, '.'], [flagTrue_Damage], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, true_damage, '.'], [flagTDs], [0, 2, 4]).
 
     template([s(_), es, un, campeon, country, '.'], [flagCountry], [0]).
 template([s(_), es, country, '.'], [flagCountry], [0]).
-    template([el, campeon, s(_),es, country, '.'], [flagCountry], [0]).
-    template([la, campeona, s(_),es, country, '.'], [flagCountry], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, country, '.'], [flagCountrys], [1, 3, 5]).
+    template([el, campeon, s(_),es, country, '.'], [flagCountry], [2]).
+    template([la, campeona, s(_),es, country, '.'], [flagCountry], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, country, '.'], [flagCountrys], [0, 2, 4]).
 
     template([s(_), es, un, campeon, emo, '.'], [flagEmo], [0]).
 template([s(_), es, emo, '.'], [flagEmo], [0]).
-    template([el, campeon, s(_),es, emo, '.'], [flagEmo], [0]).
-    template([la, campeona, s(_),es, emo, '.'], [flagEmo], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, emo, '.'], [flagEmos], [1, 3, 5]).
+    template([el, campeon, s(_),es, emo, '.'], [flagEmo], [2]).
+    template([la, campeona, s(_),es, emo, '.'], [flagEmo], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, emo, '.'], [flagEmos], [0, 2, 4]).
 
     template([s(_), es, un, campeon, punk, '.'], [flagPunk], [0]).
 template([s(_), es, punk, '.'], [flagPunk], [0]).
-    template([el, campeon, s(_),es, punk, '.'], [flagPunk], [0]).
-    template([la, campeona, s(_),es, punk, '.'], [flagPunk], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, punk, '.'], [flagPunks], [1, 3, 5]).
+    template([el, campeon, s(_),es, punk, '.'], [flagPunk], [2]).
+    template([la, campeona, s(_),es, punk, '.'], [flagPunk], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, punk, '.'], [flagPunks], [0, 2, 4]).
 
     template([s(_), es, un, campeon, disco, '.'], [flagDisco], [0]).
 template([s(_), es, disco, '.'], [flagDisco], [0]).
-    template([el, campeon, s(_),es, disco, '.'], [flagDisco], [0]).
-    template([la, campeona, s(_),es, disco, '.'], [flagDisco], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, disco, '.'], [flagDiscos], [1, 3, 5]).
+    template([el, campeon, s(_),es, disco, '.'], [flagDisco], [2]).
+    template([la, campeona, s(_),es, disco, '.'], [flagDisco], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, disco, '.'], [flagDiscos], [0, 2, 4]).
 
     template([s(_), es, un, campeon, jazz, '.'], [flagJazz], [0]).
 template([s(_), es, jazz, '.'], [flagJazz], [0]).
-    template([el, campeon, s(_),es, jazz, '.'], [flagJazz], [0]).
-    template([la, campeona, s(_),es, jazz, '.'], [flagJazz], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, jazz, '.'], [flagJazzs], [1, 3, 5]).
+    template([el, campeon, s(_),es, jazz, '.'], [flagJazz], [2]).
+    template([la, campeona, s(_),es, jazz, '.'], [flagJazz], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, jazz, '.'], [flagJazzs], [0, 2, 4]).
 
     template([s(_), es, un, campeon, bit, '.'], [flagBit], [0]).
 template([s(_), es, bit, '.'], [flagBit], [0]).
-    template([el, campeon, s(_),es, bit, '.'], [flagBit], [0]).
-    template([la, campeona, s(_),es, bit, '.'], [flagBit], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, bit, '.'], [flagBits], [1, 3, 5]).
+    template([el, campeon, s(_),es, bit, '.'], [flagBit], [2]).
+    template([la, campeona, s(_),es, bit, '.'], [flagBit], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, bit, '.'], [flagBits], [0, 2, 4]).
 
     template([s(_), es, un, campeon, hyperpop, '.'], [flagHyperpop], [0]).
 template([s(_), es, hyperpop, '.'], [flagHyperpop], [0]).
-    template([el, campeon, s(_),es, hyperpop, '.'], [flagHyperpop], [0]).
-    template([la, campeona, s(_),es, hyperpop, '.'], [flagHyperpop], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, hyperpops, '.'], [flagHyperpops], [1, 3, 5]).
+    template([el, campeon, s(_),es, hyperpop, '.'], [flagHyperpop], [2]).
+    template([la, campeona, s(_),es, hyperpop, '.'], [flagHyperpop], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, hyperpops, '.'], [flagHyperpops], [0, 2, 4]).
 
     template([s(_), es, un, campeon, edm, '.'], [flagEdm], [0]).
 template([s(_), es, edm, '.'], [flagEdm], [0]).
-    template([el, campeon, s(_),es, edm, '.'], [flagEdm], [0]).
-    template([la, campeona, s(_),es, edm, '.'], [flagEdm], [0]).
-template([s(_), ',', (_), y, (_),son, campeones, edm, '.'], [flagEdms], [1, 3, 5]).
+    template([el, campeon, s(_),es, edm, '.'], [flagEdm], [2]).
+    template([la, campeona, s(_),es, edm, '.'], [flagEdm], [2]).
+template([s(_), ',', (_), y, (_),son, campeones, edm, '.'], [flagEdms], [0, 2, 4]).
 
 	% templates default
 	template(_, ['No te he comprendido, dime algo que me sirva'], []). 
@@ -542,7 +542,7 @@ template([s(_), ',', (_), y, (_),son, campeones, edm, '.'], [flagEdms], [1, 3, 5
 	sintoma_dengue('erupcion_cutanea').
 	sintoma_dengue('sangrado').
 	sintoma_dengue('dolor_articular').
-	% Multisintoma
+
 	sintomasIs(X, Y, Z, R):- sintomas_dengue(X, Y, Z), R = [si, X, Y, y, Z, son, sintomas, del, dengue].
 	sintomasIs(X, Y, Z, R):- \+sintomas_dengue(X, Y, Z), R = [no, X, Y, y, Z, no, son, sintomas, del, dengue].
 	sintomas_dengue('fiebre_alta', 'dolor_de_cabeza', 'dolor_muscular').
@@ -572,7 +572,7 @@ template([s(_), ',', (_), y, (_),son, campeones, edm, '.'], [flagEdms], [1, 3, 5
 	medicamento_dengue('analgesicos').
 	medicamento_dengue('antifebriles').
     medicamento_dengue('monitoreo_de_plaquetas').
-	% Multimedicamentos
+	
 	medicamentosIs(X, Y, Z, R):- medicamentos_dengue(X, Y, Z), R = [si, X, Y, y, Z, son, medicamentoss, del, dengue].
 	medicamentosIs(X, Y, Z, R):- \+medicamentos_dengue(X, Y, Z), R = [no, X, Y, y, Z, no, son, medicamentoss, del, dengue].
 	medicamentos_dengue('analgesicos', 'antifebriles', 'monitoreo_de_plaquetas').
